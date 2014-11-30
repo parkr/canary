@@ -1,10 +1,7 @@
 ---
 ---
 
-<pre>
-{{ site.github }}
-</pre>
-
-<pre>
-{{ site.jekyll }}
-</pre>
+<script type="text/javascript">
+  var jsonString = {{ site.github | jsonify }};
+  document.write( JSON.stringify(JSON.parse(jsonString),null,2) );
+</script>
