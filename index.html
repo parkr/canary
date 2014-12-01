@@ -1,6 +1,10 @@
 ---
 ---
 
+<pre>{% for kv in site.jekyll %}
+ {{ kv[0] }}: {{ kv[1] }}
+{% endfor %}</pre>
+
 <pre>{% for kv in site.github %}
  {{ kv[0] }}: {{ kv[1] }}
 {% endfor %}</pre>
